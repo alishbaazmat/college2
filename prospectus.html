@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Prospectus | FG Science Degree College Wah Cantt</title>
+    <link rel="icon" type="image/jpeg" href="pics/logo2.jpeg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-content">
+        <img src="pics/logo2.jpeg" alt="College Logo" class="logo" />
+        <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        <div class="mobile-nav">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="faculty.html">Faculty</a></li>
+              <li><a href="admissions.html">Admissions</a></li>
+              <li><a href="examinations.html">Examinations</a></li>
+              <li><a href="campuslife.html">Campus Life</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="alumni-form.html">Alumni Form</a></li>
+              <li><a href="prospectus.html">Prospectus</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <img src="pics/nup.png" alt="NUP Logo" class="nup-logo" />
+      </div>
+    </header>
+    <script>
+      function toggleMenu() {
+        document.querySelector(".mobile-nav").classList.toggle("open");
+      }
+    </script>
+
+    <section class="prospectus-section">
+      <div class="prospectus-header">
+        <h1>COLLEGE PROSPECTUS</h1>
+        <p>
+          Download or view our comprehensive college prospectus for detailed
+          information about programs, facilities, and admission procedures.
+        </p>
+      </div>
+
+      <div class="prospectus-actions">
+        <div class="download-section">
+          <h3>📄 Download Prospectus</h3>
+          <p>Click the button below to download the prospectus in PDF format</p>
+          <a href="pics/prospectus.pdf" class="download-btn" download>
+            <span class="download-icon">📥</span>
+            Download Prospectus (PDF)
+          </a>
+        </div>
+
+        <div class="view-section">
+          <h3>👁️ View Online</h3>
+          <p>View the prospectus directly in your browser</p>
+          <button class="view-btn" onclick="toggleViewer()">
+            <span class="view-icon">👁️</span>
+            View Prospectus Online
+          </button>
+          <br /><br />
+          <a
+            href="pics/prospectus.pdf"
+            class="view-btn"
+            target="_blank"
+            style="text-decoration: none; display: inline-block"
+          >
+            <span class="view-icon">🔗</span>
+            Open in New Tab
+          </a>
+        </div>
+      </div>
+
+      <div id="pdf-viewer" class="pdf-viewer" style="display: none">
+        <div class="viewer-header">
+          <h3>📋 College Prospectus</h3>
+          <button class="close-viewer" onclick="toggleViewer()">✕ Close</button>
+        </div>
+        <div id="loading-indicator" class="loading-indicator">
+          <div class="spinner"></div>
+          <p>Loading PDF... Please wait</p>
+        </div>
+        <div class="pdf-alternative">
+          <p>
+            If the PDF doesn't load automatically, please use the download
+            button above.
+          </p>
+          <a href="pics/prospectus.pdf" class="download-btn" target="_blank">
+            <span class="download-icon">📥</span>
+            Open PDF in New Tab
+          </a>
+        </div>
+        <iframe
+          src="pics/prospectus.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+          width="100%"
+          height="600px"
+          frameborder="0"
+          onerror="this.style.display='none'; document.querySelector('.pdf-alternative').style.display='block';"
+          loading="lazy"
+          style="background: #f8f9fa"
+        ></iframe>
+      </div>
+
+      <div class="prospectus-info">
+        <h3>📋 What's Included in Our Prospectus</h3>
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="info-icon">🎓</span>
+            <h4>Academic Programs</h4>
+            <p>
+              Detailed information about HSSC, BS Physics, and BS IT programs
+            </p>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📝</span>
+            <h4>Admission Procedures</h4>
+            <p>Step-by-step admission process and requirements</p>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🏫</span>
+            <h4>Campus Facilities</h4>
+            <p>Information about labs, library, sports facilities, and more</p>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">👥</span>
+            <h4>Faculty Information</h4>
+            <p>Details about our experienced teaching staff</p>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">💰</span>
+            <h4>Fee Structure</h4>
+            <p>Complete fee details for all programs</p>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <h4>Contact Information</h4>
+            <p>How to reach us and get in touch</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="pics/logo2.jpeg" alt="College Logo" />
+        </div>
+        <div class="footer-info">
+          <h3>FG Science Degree College Officers Colony Wah Cantt</h3>
+          <p>Wah Cantt, Punjab, Pakistan</p>
+          <p>Phone: 051-4511032</p>
+          <p>Email: fgsdcwah@gmail.com</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="examinations.html">Examinations</a></li>
+            <li><a href="campuslife.html">Campus Life</a></li>
+            <li><a href="prospectus.html">Prospectus</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-map">
+          <iframe
+            src="https://www.google.com/maps?q=FG+Science+Degree+College+Officers+Colony+Wah+Cantt&output=embed"
+            width="100%"
+            height="180"
+            style="border: 0; border-radius: 12px; margin-top: 18px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; Copyright @ 2025 . All Rights Reserved</p>
+        <img
+          src="pics/logo2.jpeg"
+          alt="College Logo Small"
+          class="footer-logo-small"
+        />
+      </div>
+    </footer>
+
+    <script>
+      function toggleViewer() {
+        const viewer = document.getElementById("pdf-viewer");
+        const loadingIndicator = document.getElementById("loading-indicator");
+        const iframe = viewer.querySelector("iframe");
+
+        if (viewer.style.display === "none") {
+          viewer.style.display = "block";
+          viewer.scrollIntoView({ behavior: "smooth" });
+
+          // Show loading indicator
+          loadingIndicator.style.display = "flex";
+
+          // Hide loading after iframe loads
+          iframe.onload = function () {
+            setTimeout(() => {
+              loadingIndicator.style.display = "none";
+            }, 1000);
+          };
+
+          // Hide loading after 5 seconds if iframe doesn't load
+          setTimeout(() => {
+            loadingIndicator.style.display = "none";
+          }, 5000);
+        } else {
+          viewer.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

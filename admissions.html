@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admissions | FG Science Degree College Wah Cantt</title>
+    <link rel="icon" type="image/jpeg" href="pics/logo2.jpeg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-content">
+        <div style="text-align: center; margin-top: 32px">
+          <img src="pics/logo2.jpeg" alt="College Logo" class="logo" />
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        <div class="mobile-nav">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="faculty.html">Faculty</a></li>
+              <li><a href="admissions.html">Admissions</a></li>
+              <li><a href="examinations.html">Examinations</a></li>
+              <li><a href="campuslife.html">Campus Life</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="alumni-form.html">Alumni Form</a></li>
+              <li><a href="prospectus.html">Prospectus</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <img src="pics/nup.png" alt="NUP Logo" class="nup-logo" />
+      </div>
+    </header>
+    <script>
+      function toggleMenu() {
+        document.querySelector(".mobile-nav").classList.toggle("open");
+      }
+    </script>
+    <!-- Poster Modal -->
+    <div id="posterModal" class="modal" style="display: flex">
+      <span class="close" onclick="closePosterModal()">&times;</span>
+      <img
+        src="pics/poster .png"
+        alt="Admission Poster"
+        class="poster-img-modal"
+      />
+    </div>
+
+    <script>
+      function closePosterModal() {
+        document.getElementById("posterModal").style.display = "none";
+        document.body.classList.remove("modal-open");
+      }
+      window.onload = function () {
+        document.getElementById("posterModal").style.display = "flex";
+        document.body.classList.add("modal-open");
+      };
+    </script>
+
+    <style>
+      .modal {
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.85);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .poster-img-modal {
+        max-width: 95vw;
+        max-height: 90vh;
+        border-radius: 12px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        display: block;
+      }
+      .close {
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        font-size: 2.5rem;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+        z-index: 10;
+        transition: color 0.2s;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        padding: 2px 12px 4px 12px;
+        line-height: 1;
+      }
+      .close:hover {
+        color: #d32f2f;
+        background: rgba(0, 0, 0, 0.6);
+      }
+      body.modal-open > *:not(.modal) {
+        filter: blur(2px);
+        pointer-events: none;
+        user-select: none;
+      }
+    </style>
+
+    <section id="admissions" class="admissions-section">
+      <h2>HSSC Admissions</h2>
+      <div class="admission-boxes">
+        <div class="admission-box fade-in">
+          <h3>Admission Policy</h3>
+          <p>
+            Admission to the HSSC 1st year is granted in accordance with the
+            policy of the FGEI (C/G) Directorate GHQ Rawalpindi. The admission
+            program is notified through POF Khabarnama and FGEI (C/G) regional
+            office Wah Cantt, within a week after the declaration of SSC and
+            HSSC results by FBISE Islamabad.<br />A copy of the same is also
+            displayed on the college noticeboard. Candidates securing less than
+            60% of marks in SSC are not eligible to seek admission as per
+            policy. Guardianship is not admissible.
+          </p>
+        </div>
+        <div class="admission-box fade-in">
+          <h3>Admission Eligibility</h3>
+          <ul>
+            <li>
+              Only the real sons of the following are eligible to seek admission
+              to the college:
+            </li>
+            <li>Armed Forces / FGEI (serving)</li>
+            <li>Defence paid civilians (serving)</li>
+            <li>POF Employees (serving)</li>
+            <li>Armed Forces / FGEI (Retired)</li>
+            <li>Open merit (All categories of Cantt residents)</li>
+          </ul>
+          <p>
+            Children of FGEI employees are treated at par with the children of
+            Armed Forces serving personnel and are granted admission to college
+            over and above the allocated quota.
+          </p>
+        </div>
+        <div class="admission-box fade-in">
+          <h3>General Instructions</h3>
+          <ul>
+            <li>
+              The prospectus along with the admission form is issued by the
+              college office during work hours.
+            </li>
+            <li>
+              Acceptance of an application form does not necessarily mean a
+              selection of a candidate for admission.
+            </li>
+            <li>
+              If an applicant wishes to be considered for admission against more
+              than one group, he should apply on a separate admission form
+              accordingly.
+            </li>
+            <li>
+              In their own interest, the applicants are advised to apply for
+              admission to other colleges as well.
+            </li>
+            <li>
+              Admission forms containing incomplete or false information shall
+              stand rejected forthwith even if the applicant has paid the
+              admission fee/ dues.
+            </li>
+            <li>
+              At the time of submission of the admission form attach attested
+              photocopies of the SSC or HSSC result card only. However, a
+              complete set of documents should be submitted along with the fee.
+            </li>
+            <li>The college does not admit students on a casual basis.</li>
+            <li>
+              The applicants are directed to fill admission form carefully as
+              changes will not be allowed afterward.
+            </li>
+          </ul>
+        </div>
+        <div class="admission-box fade-in">
+          <h3>Submission of Documents</h3>
+          <ul>
+            <li>
+              Photograph passport size One, ID size 2 Nos, with blue background.
+            </li>
+            <li>One attested photocopy of the SSC marks sheet.</li>
+            <li>
+              One attested photocopy of character/ provisional certificate from
+              the Head of the institution last attended.
+            </li>
+            <li>
+              One photocopy of the CNIC of the father (and of the applicant for
+              admission to BS).
+            </li>
+          </ul>
+        </div>
+        <div class="admission-box fade-in">
+          <h3>Subject Combinations</h3>
+          <strong>Compulsory Subjects:</strong>
+          <ul>
+            <li>
+              English, Urdu, Islamic Education (Part-I) & Pakistan Studies
+              (Part-II)
+            </li>
+          </ul>
+          <strong>Elective Subjects:</strong>
+          <ul>
+            <li><b>Pre-Medical:</b> Physics, Chemistry, Biology</li>
+            <li><b>Pre-Engineering:</b> Physics, Chemistry, Mathematics</li>
+            <li>
+              <b>General Science:</b>
+              <ul>
+                <li>Mathematics, Physics, Computer Sciences</li>
+                <li>Mathematics, Statistics, Computer Sciences</li>
+                <li>Mathematics, Statistics, Economics</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="bs-section">
+      <h2 class="bs-heading">BS Programmes</h2>
+      <div class="bs-programmes">
+        <div class="bs-box bs-physics">
+          <img src="pics/physics.jpg" alt="Physics" class="bs-card-img-full" />
+          <div class="bs-box-content">
+            <h3>BS Physics</h3>
+            <p><strong>Duration:</strong> 4 Years (8 Semesters)</p>
+            <p><strong>Total Credit Hours:</strong> 135</p>
+            <p>
+              <strong>About:</strong> BS Physics is a 4 Year Degree Programme
+              designed to provide students with sound understanding of
+              fundamental concepts in physics, including: classical mechanics
+              and electromagnetism, thermodynamics and statistical physics,
+              principles of waves and optics, and quantum mechanics.
+            </p>
+            <p>
+              <strong>Eligibility:</strong> HSSC certificate (1st division or
+              equivalent) from a recognized institute. Preference to those who
+              have studied Maths and Physics at intermediate level. Selection is
+              merit based.
+            </p>
+            <p class="bs-note">
+              Note: The College is affiliated with (NUP) National University of
+              Pakistan for BS Programmes.
+            </p>
+          </div>
+        </div>
+        <div class="bs-box bs-cs">
+          <img
+            src="pics/computer.jpg"
+            alt="Computer Science"
+            class="bs-card-img-full"
+          />
+          <div class="bs-box-content">
+            <h3>BS Computer Science</h3>
+            <p><strong>Duration:</strong> 4 Years (8 Semesters)</p>
+            <p><strong>Total Credit Hours:</strong> 135</p>
+            <p>
+              <strong>About:</strong> BS Computer Science is a comprehensive 4
+              Year Degree Programme focused on modern computing, programming,
+              software engineering, databases, artificial intelligence, and
+              web/mobile development. The curriculum is designed to equip
+              students with both theoretical knowledge and practical skills
+              required in the IT industry.
+            </p>
+            <p>
+              <strong>Eligibility:</strong> HSSC certificate (1st division or
+              equivalent) with Mathematics as a major subject. Selection is
+              merit based. Students with a strong interest in technology and
+              problem-solving are encouraged to apply.
+            </p>
+            <p class="bs-note">
+              Note: The College is affiliated with (NUP) National University of
+              Pakistan for BS Programmes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="../logo.png" alt="College Logo" />
+        </div>
+        <div class="footer-info">
+          <h3>FG Science Degree College Officers Colony Wah Cantt</h3>
+          <p>Wah Cantt, Punjab, Pakistan</p>
+          <p>Phone: 051-4511032</p>
+          <p>Email: fgsdcwah@gmail.com</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="examinations.html">Examinations</a></li>
+            <li><a href="news.html">News</a></li>
+          </ul>
+        </div>
+        <div class="footer-map">
+          <iframe
+            src="https://www.google.com/maps?q=FG+Science+Degree+College+Officers+Colony+Wah+Cantt&output=embed"
+            width="100%"
+            height="180"
+            style="border: 0; border-radius: 12px; margin-top: 18px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; Copyright @ 2025 . All Rights Reserved</p>
+        <img
+          src="../logo.png"
+          alt="College Logo Small"
+          class="footer-logo-small"
+        />
+      </div>
+    </footer>
+  </body>
+</html>

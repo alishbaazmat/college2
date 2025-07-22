@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>FG Science Degree College Wah Cantt</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-content">
+        <img src="pics/logo2.jpeg" alt="College Logo" class="logo" />
+        <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        <div class="mobile-nav">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="faculty.html">Faculty</a></li>
+              <li><a href="admissions.html">Admissions</a></li>
+              <li><a href="examinations.html">Examinations</a></li>
+              <li><a href="campuslife.html">Campus Life</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="alumni-form.html">Alumni Form</a></li>
+              <li><a href="prospectus.html">Prospectus</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <img src="pics/nup.png" alt="NUP Logo" class="nup-logo" />
+      </div>
+    </header>
+
+    <script>
+      function toggleMenu() {
+        document.querySelector(".mobile-nav").classList.toggle("open");
+      }
+    </script>
+
+    <section class="hero-section">
+      <div class="hero-slider">
+        <div
+          class="slide active"
+          style="background-image: url('pics/front.png')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('pics/front1.png')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('pics/front2.png')"
+        ></div>
+        <div class="slide" style="background-image: url('pics/8.jpeg')"></div>
+        <div class="slider-overlay"></div>
+        <div class="hero-text">
+          <h1>FG Science Degree College For Men Wah Cantt</h1>
+          <h2>National University of Pakistan</h2>
+          <p>A Legacy of Excellence in Education</p>
+          <p>Join us in achieving your academic and career aspirations.</p>
+        </div>
+        <div class="slider-controls">
+          <span class="slider-dot active" onclick="showSlide(0)"></span>
+          <span class="slider-dot" onclick="showSlide(1)"></span>
+          <span class="slider-dot" onclick="showSlide(2)"></span>
+          <span class="slider-dot" onclick="showSlide(3)"></span>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".slide");
+      const dots = document.querySelectorAll(".slider-dot");
+      function showSlide(n) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle("active", i === n);
+          dots[i].classList.toggle("active", i === n);
+        });
+        currentSlide = n;
+      }
+      function nextSlide() {
+        let n = (currentSlide + 1) % slides.length;
+        showSlide(n);
+      }
+      setInterval(nextSlide, 4000);
+    </script>
+
+    <section class="intro-section">
+      <div class="intro-flex">
+        <img src="pics/1.jpeg" alt="College Event" class="intro-img" />
+        <div class="intro-text">
+          <h1>
+            FG Science Degree College, Wah Cantt<br />- A Legacy of Excellence
+            in Education
+          </h1>
+          <p>
+            FG Science Degree College, located in the heart of Wah Cantt,
+            Pakistan, has been a provider of quality education since 1993. With
+            picturesque green grounds spanning approximately 60 canals, our
+            college offers a serene learning environment. Students can pursue
+            their sporting interests with access to various sports facilities.
+            Our well-equipped science labs enable a practical understanding of
+            scientific principles.<br /><br />We offer HSSC classes in science
+            groups, along with BS Physics and BS IT programs in a co-educational
+            setting. Graduates from our college have excelled in their fields,
+            making valuable contributions to society. We are committed to
+            upholding educational excellence and nurturing both academic and
+            personal growth. Join us in achieving your academic and career
+            aspirations.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="v-m-c-section">
+      <div class="v-m-c-box vision-box">
+        <div class="v-mc-inner">
+          <div class="v-mc-front">
+            <img src="pics/vision.webp" alt="Vision" class="box-image" />
+            <h2>VISION</h2>
+            <p>
+              Our vision is to forge strong, positive connections with students
+              so they can achieve independence, build confidence, and gain
+              academic knowledge and to transform the FGEIs network into a
+              matchless educational system of the country.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="v-m-c-box mission-box">
+        <div class="v-mc-inner">
+          <div class="v-mc-front">
+            <img src="pics/mission.jpg" alt="Mission" class="box-image" />
+            <h2>MISSION</h2>
+            <p>
+              To equip the wards of Armed Forces personnel as well as of
+              civilians residing in cantonments/garrisons throughout the country
+              to be creative, dynamic, and useful members of society by
+              providing an unparalleled and healthy educational environment,
+              rendering them an opportunity to get purposeful and quality
+              education and fostering their skills so that they may play an
+              effective role in the progress of the country.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="v-m-c-box values-box">
+        <div class="v-mc-inner">
+          <div class="v-mc-front">
+            <img
+              src="pics/core-values.jpg"
+              alt="Core Values"
+              class="box-image"
+            />
+            <h2>Core Values</h2>
+            <p>
+              Instilling in the students moral, social and national values so as
+              to help them become good human beings and patriotic Pakistanis.<br />
+              Grooming them to be educationally sound to adjust as effective and
+              productive members of society.<br />
+              Making the students physically and mentally robust by providing
+              them with the facilities of sports and co-curricular activities.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section class="principal-section">
+      <div class="principal-glass-card">
+        <div class="principal-text">
+          <h2>PRINCIPAL'S MESSAGE</h2>
+          <p>
+            Welcome to the website of FG Science Degree College Wah Cantt! With
+            a rich history spanning over several decades, our esteemed
+            institution has been providing quality education since 1993.
+            Throughout our journey, we have maintained a strong commitment to
+            academic excellence, holistic development, and continuous learning.
+            Our experienced faculty members are dedicated to imparting knowledge
+            and nurturing critical thinking skills to prepare our students for
+            successful futures.<br /><br />At FG Science Degree College Wah
+            Cantt, we take pride in our strong alumni network, with many
+            graduates excelling in various professional fields and contributing
+            to society. We offer a range of programs and facilities designed to
+            provide an enriching educational experience. By fostering a
+            nurturing learning environment, we empower our students to become
+            well-rounded individuals ready to make a positive impact on the
+            world.
+          </p>
+          <p><b>Azhar Kaiser</b></p>
+        </div>
+        <img src="pics/principal.png" alt="Principal" class="principal-img" />
+      </div>
+    </section>
+    <section class="news-section">
+      <h2>NEWS & ANNOUNCEMENTS</h2>
+      <div class="news-cards">
+        <div class="news-card">
+          <h3>
+            <span class="news-title"
+              >BS Physics (Co-Education) - Apply for Pre-Admission
+              Registration</span
+            >
+          </h3>
+          <p>
+            We are pleased to announce the opening of pre-admission registration
+            for the Bachelor of Science (BS) Physics program. This co-education
+            program provides a comprehensive curriculum.
+          </p>
+          <span class="news-details" onclick="showBsModal()">View Details</span>
+        </div>
+        <div class="news-card">
+          <h3>
+            <span class="news-title"
+              >BS Computer Science- Pre-Admission Registration Open</span
+            >
+            <span class="breaking-badge">Breaking News</span>
+          </h3>
+          <p>
+            Welcome to the BS Computer Science program at FG Science Degree College,
+            affiliated with the prestigious University of Punjab. We are
+            delighted to offer you an exceptional educational experience.
+          </p>
+          <span class="news-details" onclick="showBsModal()">View Details</span>
+        </div>
+        <div class="news-card">
+          <h3>
+            <span class="news-title">HSSC-I Pre-Admission Registration</span>
+          </h3>
+          <p>
+            Announcing HSSC-I pre-admissions Registration at FG Science Degree
+            College Wah Cantt! Join for a transformative educational journey,
+            where academic excellence meets holistic growth.
+          </p>
+          <span class="news-details">View Details</span>
+        </div>
+      </div>
+      <div class="news-all-btn-wrap">
+        <button class="news-all-btn">View All News</button>
+      </div>
+      <div id="bs-modal" class="modal" style="display: none">
+        <div class="modal-content">
+          <span class="close-modal" onclick="closeBsModal()">&times;</span>
+          <h2>BS Admission Details</h2>
+          <h4>Pre-Admission Registration Open</h4>
+          <img
+            src="pics/poster .png"
+            alt="BS Admission Poster"
+            class="modal-poster"
+          />
+        </div>
+      </div>
+    </section>
+    <script>
+      function showBsModal() {
+        document.getElementById("bs-modal").style.display = "block";
+      }
+      function closeBsModal() {
+        document.getElementById("bs-modal").style.display = "none";
+      }
+      window.onclick = function (event) {
+        var modal = document.getElementById("bs-modal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="pics/logo2.jpeg" alt="College Logo" />
+        </div>
+        <div class="footer-info">
+          <h3>FG Science Degree College Officers Colony Wah Cantt</h3>
+          <p>Wah Cantt, Punjab, Pakistan</p>
+          <p>Phone: 051-4511032</p>
+          <p>Email: fgsdcwah@gmail.com</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="examinations.html">Examinations</a></li>
+            <li><a href="campuslife.html">Campus Life</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="prospectus.html">Prospectus</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-map">
+          <iframe
+            src="https://www.google.com/maps?q=FG+Science+Degree+College+Officers+Colony+Wah+Cantt&output=embed"
+            width="100%"
+            height="180"
+            style="border: 0; border-radius: 12px; margin-top: 18px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; Copyright @ 2025 . All Rights Reserved</p>
+        <img
+          src="pics/logo2.jpeg"
+          alt="College Logo Small"
+          class="footer-logo-small"
+        />
+      </div>
+    </footer>
+  </body>
+</html>

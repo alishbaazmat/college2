@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Gallery | FG Science Degree College Wah Cantt</title>
+    <link rel="icon" type="image/jpeg" href="pics/logo2.jpeg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-content">
+        <img src="pics/logo2.jpeg" alt="College Logo" class="logo" />
+        <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        <div class="mobile-nav">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="faculty.html">Faculty</a></li>
+              <li><a href="admissions.html">Admissions</a></li>
+              <li><a href="examinations.html">Examinations</a></li>
+              <li><a href="campuslife.html">Campus Life</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="alumni-form.html">Alumni Form</a></li>
+              <li><a href="prospectus.html">Prospectus</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <img src="pics/nup.png" alt="NUP Logo" class="nup-logo" />
+      </div>
+    </header>
+    <script>
+      function toggleMenu() {
+        document.querySelector(".mobile-nav").classList.toggle("open");
+      }
+    </script>
+
+    <section class="gallery-section">
+      <div class="gallery-header">
+        <h1>COLLEGE GALLERY</h1>
+        <p>
+          Explore our campus through these beautiful photographs showcasing our
+          facilities, events, and student life.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div
+          class="gallery-item"
+          onclick="openModal('pics/1.jpeg', 'Campus View 1')"
+        >
+          <img src="pics/1.jpeg" alt="Campus View 1" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+          </div>
+        </div>
+
+        <div
+          class="gallery-item"
+          onclick="openModal('pics/2.jpeg', 'Campus View 2')"
+        >
+          <img src="pics/2.jpeg" alt="Campus View 2" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+          </div>
+        </div>
+
+        <div
+          class="gallery-item"
+          onclick="openModal('pics/5.jpeg', 'Campus View 5')"
+        >
+          <img src="pics/5.jpeg" alt="Campus View 5" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+          </div>
+        </div>
+
+        <div
+          class="gallery-item"
+          onclick="openModal('pics/study.jpeg', 'Study and Recreational Trip')"
+        >
+          <img
+            src="pics/study.jpeg"
+            alt="Study and Recreational Trip"
+            loading="lazy"
+            style="object-fit: cover; width: 100%; height: 100%"
+          />
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+          </div>
+        </div>
+
+        <div
+          class="gallery-item"
+          onclick="openModal('pics/8.jpeg', 'Campus View 8')"
+        >
+          <img src="pics/8.jpeg" alt="Campus View 8" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+          </div>
+        </div>
+
+        <div
+          class="gallery-item"
+          onclick="openModal('pics/imggg.jpeg', 'Campus View 9')"
+        >
+          <img
+            src="pics/imggg.jpeg"
+            alt="Campus View 9"
+            loading="lazy"
+            style="object-fit: cover; width: 100%; height: 100%"
+          />
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+          </div>
+        </div>
+
+        <div
+          class="gallery-item"
+          onclick="openModal('pics/10.jpeg', 'Campus View 10')"
+        >
+          <img src="pics/10.jpeg" alt="Campus View 10" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+          </div>
+        </div>
+
+        <div
+          class="gallery-item"
+          onclick="openModal('pics/11.jpeg', 'Campus View 11')"
+        >
+          <img src="pics/11.jpeg" alt="Campus View 11" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+          </div>
+        </div>
+
+        <div
+          class="gallery-item"
+          onclick="openModal('pics/12.jpeg', 'Campus View 12')"
+        >
+          <img src="pics/12.jpeg" alt="Campus View 12" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+          </div>
+        </div>
+        <!-- Hidden images start here -->
+        <div
+          class="gallery-item hidden-gallery"
+          onclick="openModal('pics/13.jpeg', 'Campus View 13')"
+        >
+          <img src="pics/13.jpeg" alt="Campus View 13" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+          </div>
+        </div>
+        <div
+          class="gallery-item hidden-gallery"
+          onclick="openModal('pics/14.jpeg', 'Campus View 14')"
+        >
+          <img src="pics/14.jpeg" alt="Campus View 14" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+          </div>
+        </div>
+        <div
+          class="gallery-item hidden-gallery"
+          onclick="openModal('pics/15.jpeg', 'Campus View 15')"
+        >
+          <img src="pics/15.jpeg" alt="Campus View 15" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+          </div>
+        </div>
+        <div
+          class="gallery-item hidden-gallery"
+          onclick="openModal('pics/16.jpeg', 'Campus View 16')"
+        >
+          <img
+            src="pics/16.jpeg"
+            alt="Campus View 16"
+            loading="lazy"
+            style="
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+              transform: none;
+            "
+          />
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+          </div>
+        </div>
+        <div
+          class="gallery-item hidden-gallery"
+          onclick="openModal('pics/18.jpeg', 'Campus View 18')"
+        >
+          <img src="pics/18.jpeg" alt="Campus View 18" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+          </div>
+        </div>
+        <div
+          class="gallery-item hidden-gallery"
+          onclick="openModal('pics/20.jpeg', 'Campus View 20')"
+        >
+          <img src="pics/20.jpeg" alt="Campus View 20" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+          </div>
+        </div>
+        <div
+          class="gallery-item hidden-gallery"
+          onclick="openModal('pics/21.jpeg', 'Campus View 21')"
+        >
+          <img src="pics/21.jpeg" alt="Campus View 21" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+          </div>
+        </div>
+        <div
+          class="gallery-item hidden-gallery"
+          onclick="openModal('pics/imgd.jpeg', 'Campus View D')"
+        >
+          <img
+            src="pics/imgd.jpeg"
+            alt="Campus View D"
+            loading="lazy"
+            style="object-fit: cover; width: 100%; height: 100%"
+          />
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+          </div>
+        </div>
+        <div
+          class="gallery-item hidden-gallery"
+          onclick="openModal('pics/imgc.jpeg', 'Campus View C')"
+        >
+          <img
+            src="pics/imgc.jpeg"
+            alt="Campus View C"
+            loading="lazy"
+            style="object-fit: cover; width: 100%; height: 100%"
+          />
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 24px">
+        <button
+          id="loadMoreBtn"
+          style="
+            padding: 12px 32px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            background: #1a2536;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+          "
+        >
+          Load More
+        </button>
+      </div>
+      <script>
+        document.getElementById("loadMoreBtn").onclick = function () {
+          document.querySelectorAll(".hidden-gallery").forEach(function (el) {
+            el.style.display = "block";
+          });
+          this.style.display = "none";
+        };
+        // Hide hidden-gallery items by default
+        document.querySelectorAll(".hidden-gallery").forEach(function (el) {
+          el.style.display = "none";
+        });
+      </script>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal" onclick="closeModal()">
+      <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="Gallery Image" />
+        <h3 id="modalTitle"></h3>
+      </div>
+    </div>
+
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="pics/logo2.jpeg" alt="College Logo" />
+        </div>
+        <div class="footer-info">
+          <h3>FG Science Degree College Officers Colony Wah Cantt</h3>
+          <p>Wah Cantt, Punjab, Pakistan</p>
+          <p>Phone: 051-4511032</p>
+          <p>Email: fgsdcwah@gmail.com</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="examinations.html">Examinations</a></li>
+            <li><a href="campuslife.html">Campus Life</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="prospectus.html">Prospectus</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-map">
+          <iframe
+            src="https://www.google.com/maps?q=FG+Science+Degree+College+Officers+Colony+Wah+Cantt&output=embed"
+            width="100%"
+            height="180"
+            style="border: 0; border-radius: 12px; margin-top: 18px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; Copyright @ 2025 . All Rights Reserved</p>
+        <img
+          src="pics/logo2.jpeg"
+          alt="College Logo Small"
+          class="footer-logo-small"
+        />
+      </div>
+    </footer>
+
+    <script>
+      function openModal(imageSrc, title) {
+        const modal = document.getElementById("imageModal");
+        const modalImage = document.getElementById("modalImage");
+        const modalTitle = document.getElementById("modalTitle");
+
+        modalImage.src = imageSrc;
+        modalTitle.textContent = title;
+        modal.style.display = "flex";
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeModal() {
+        const modal = document.getElementById("imageModal");
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+
+      // Close modal when clicking outside the image
+      document
+        .getElementById("imageModal")
+        .addEventListener("click", function (e) {
+          if (e.target === this) {
+            closeModal();
+          }
+        });
+
+      // Close modal with Escape key
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closeModal();
+        }
+      });
+    </script>
+  </body>
+</html>
