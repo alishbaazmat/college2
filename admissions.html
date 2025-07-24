@@ -10,9 +10,7 @@
   <body>
     <header class="main-header">
       <div class="header-content">
-        <div style="text-align: center; margin-top: 32px">
-          <img src="pics/logo2.jpeg" alt="College Logo" class="logo" />
-        </div>
+        <img src="pics/logo2.jpeg" alt="College Logo" class="logo" />
         <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
         <div class="mobile-nav">
           <nav>
@@ -34,7 +32,14 @@
     </header>
     <script>
       function toggleMenu() {
-        document.querySelector(".mobile-nav").classList.toggle("open");
+        var nav = document.querySelector(".mobile-nav");
+        nav.classList.toggle("open");
+        // Force display style for maximum override
+        if (nav.classList.contains("open")) {
+          nav.style.display = "flex";
+        } else {
+          nav.style.display = "none";
+        }
       }
     </script>
     <!-- Poster Modal -->
@@ -282,7 +287,7 @@
     <footer class="main-footer">
       <div class="footer-content">
         <div class="footer-logo">
-          <img src="../logo.png" alt="College Logo" />
+          <img src="pics/logo2.jpeg" alt="College Logo" />
         </div>
         <div class="footer-info">
           <h3>FG Science Degree College Officers Colony Wah Cantt</h3>
@@ -314,7 +319,7 @@
       <div class="footer-bottom">
         <p>&copy; Copyright @ 2025 . All Rights Reserved</p>
         <img
-          src="../logo.png"
+          src="pics/logo2.jpeg"
           alt="College Logo Small"
           class="footer-logo-small"
         />

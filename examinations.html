@@ -11,15 +11,23 @@
     <header class="main-header">
       <div class="header-content">
         <img src="pics/logo2.jpeg" alt="College Logo" class="logo" />
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="admissions.html">Admissions</a></li>
-            <li><a href="examinations.html">Examinations</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+        <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        <div class="mobile-nav">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="faculty.html">Faculty</a></li>
+              <li><a href="admissions.html">Admissions</a></li>
+              <li><a href="examinations.html">Examinations</a></li>
+              <li><a href="campuslife.html">Campus Life</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="alumni-form.html">Alumni Form</a></li>
+              <li><a href="prospectus.html">Prospectus</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <img src="pics/nup.png" alt="NUP Logo" class="nup-logo" />
       </div>
     </header>
     <section id="examinations" class="examinations-section">
@@ -95,5 +103,10 @@
         />
       </div>
     </footer>
+    <script>
+      function toggleMenu() {
+        document.querySelector(".mobile-nav").classList.toggle("open");
+      }
+    </script>
   </body>
 </html>
